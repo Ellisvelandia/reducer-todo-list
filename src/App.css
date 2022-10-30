@@ -24,6 +24,7 @@ body {
   background: rgba(164, 229, 238, 0.75);
   color: rgb(24, 22, 22);
   font-family: "Barlow", sans-serif;
+  color: #104fad;
 }
 
 .card-to-do {
@@ -51,7 +52,7 @@ h1 {
 }
 
 .counter-todos span {
-  color: #f29559;
+  color: #104fad;
   font-weight: 700;
   font-size: 24px;
   margin-left: 10px;
@@ -97,7 +98,7 @@ ul li form {
 }
 
 .container-done {
-  background-color: white;
+  background-color: rgb(167, 224, 247);
   width: 24px;
   height: 24px;
   border-radius: 20px;

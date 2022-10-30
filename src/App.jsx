@@ -19,14 +19,23 @@ function App() {
       <div className="card-to-do">
         <h1>Task List</h1>
         <div className="counter-todos">
-          <h3>N Tasks: {todosCount}</h3>
-          <h3>pending Tasks: {pendingTodosCount}</h3>
+          <h3>
+            N Tasks: <span>{todosCount}</span>
+          </h3>
+          <h3>
+            pending Tasks: <span>{pendingTodosCount}</span>
+          </h3>
         </div>
         <div className="add-todo">
           <h3>Add Tasks</h3>
-          <TodoAdd />
+          <TodoAdd handleNewTodo={handleNewTodo} />
         </div>
-        <TodoList />
+        <TodoList
+          todos={todos}
+          handleUpdateTodo={handleUpdateTodo}
+          handleDeleteTodo={handleDeleteTodo}
+          handleCompleteTodo={handleCompleteTodo}
+        />
       </div>
     </>
   );
